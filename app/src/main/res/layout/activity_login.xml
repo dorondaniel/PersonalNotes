@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login"
-    tools:context=".signup">
+    tools:context=".login">
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,13 +23,14 @@
         android:shadowDy="10"/>
 
     <EditText
-        android:id="@+id/mail"
+        android:id="@+id/lgn_mail"
         android:layout_width="260dp"
         android:layout_height="50dp"
         android:inputType="textEmailAddress"
         android:fontFamily="@font/jost_medium"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="280dp"
+        android:textColor="@color/primary_shade"
         android:hint="enter e-mail address"
         android:includeFontPadding="true"
         android:gravity="center"
@@ -37,12 +38,13 @@
         android:background="@drawable/custom_et" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/lgn_pass"
         android:layout_width="260dp"
         android:layout_height="50dp"
         android:fontFamily="@font/jost_medium"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="350dp"
+        android:textColor="@color/primary_shade"
         android:hint="enter password"
         android:inputType="textPassword"
         android:includeFontPadding="true"
@@ -51,6 +53,7 @@
         android:background="@drawable/custom_et" />
 
     <Button
+        android:id="@+id/lgn_btn"
         android:layout_width="120dp"
         android:layout_height="50dp"
         android:text="@string/login"
@@ -60,6 +63,7 @@
         android:backgroundTint="@color/primary_shade"/>
 
     <TextView
+        android:id="@+id/lgn_to_sign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SIGN-IN"

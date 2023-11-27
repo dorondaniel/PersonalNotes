@@ -8,7 +8,7 @@ import android.os.HandlerThread
 import android.widget.ProgressBar
 
 class SplashActivity : AppCompatActivity() {
-    var prgs_bar : ProgressBar? = null
+    var prgs_bar: ProgressBar? = null
     var i = 0
     var handler = Handler()
 
@@ -18,10 +18,10 @@ class SplashActivity : AppCompatActivity() {
 
         prgs_bar = findViewById<ProgressBar>(R.id.progess)
 
-        handler.postDelayed(Runnable(){
-                               startActivity(Intent(this@SplashActivity,MainActivity::class.java))
+        handler.postDelayed(Runnable() {
+            startActivity(Intent(this@SplashActivity, signup::class.java))
             finish()
-        },2000)
+        }, 2000)
     }
 }
 
