@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "491772556700",
+    "project_id": "personal-notes-practice",
+    "storage_bucket": "personal-notes-practice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491772556700:android:f7b83b9d67a6d3abbe4459",
+        "android_client_info": {
+          "package_name": "com.doron.personalnotes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmg4AsMe8J00UCP4ByE-LQ7fkKskIfSTg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
