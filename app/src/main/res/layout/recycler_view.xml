@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/custom_et"
+    android:backgroundTint="@color/secondary"
+    android:backgroundTintMode="screen"
+    android:layout_width="match_parent"
+    android:padding="12dp"
+    android:layout_marginVertical="8dp"
+    android:layout_marginHorizontal="8dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jost_medium"
+        android:id="@+id/title_recycle"
+        android:text="Title"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.12"
+        android:layout_marginVertical="4dp"
+        android:padding="6dp"
+        android:textColor="@color/secondary_shade"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jost_medium"
+        android:id="@+id/content_recycle"
+        android:text="note content lorem ipsum diem"
+        android:padding="6dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_marginVertical="4dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:letterSpacing="0.1"
+        android:textColor="@color/primary_shade"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jost_medium"
+        android:padding="6dp"
+        android:id="@+id/time_recycle"
+        android:text="time"
+        android:letterSpacing="0.1"
+        android:textSize="16sp"
+        android:gravity="end"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="4dp"
+        android:textColor="@color/secondary_shade"/>
+
+</LinearLayout>

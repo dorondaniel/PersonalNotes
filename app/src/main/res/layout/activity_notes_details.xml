@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary_shade"
+    android:padding="20dp"
+    tools:context=".NotesDetails">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_bar"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/pg_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Note"
+            android:fontFamily="@font/jost_medium"
+            android:textColor="@color/secondary"
+            android:textStyle="bold"
+            android:textSize="28sp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/donebtn"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/baseline_done_24" />
+        
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_layout"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginVertical="52dp"
+        android:backgroundTint="@color/secondary"
+        android:background="@drawable/custom_et">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/title_txt"
+            android:hint="Title"
+            android:textColorHint="@color/secondary_shade"
+            android:textSize="24sp"
+            android:fontFamily="@font/jost_medium"
+            android:textStyle="bold"
+            android:textColor="@color/secondary_shade"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:id="@+id/content_txt"
+            android:hint="Content"
+            android:minLines="10"
+            android:gravity="top"
+            android:textColorHint="@color/secondary_shade"
+            android:textSize="24sp"
+            android:fontFamily="@font/jost_medium"
+            android:textColor="@color/secondary_shade"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Note"
+        android:id="@+id/delete_tv"
+        android:fontFamily="@font/jost_medium"
+        android:textSize="28sp"
+        android:textColor="@color/secondary"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:visibility="gone"/>
+
+</RelativeLayout>

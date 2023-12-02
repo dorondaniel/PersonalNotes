@@ -24,12 +24,13 @@
 
     <EditText
         android:id="@+id/lgn_mail"
-        android:layout_width="260dp"
+        android:layout_width="320dp"
         android:layout_height="50dp"
         android:inputType="textEmailAddress"
         android:fontFamily="@font/jost_medium"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="280dp"
+        android:textSize="20sp"
         android:textColor="@color/primary_shade"
         android:hint="enter e-mail address"
         android:includeFontPadding="true"
@@ -39,13 +40,14 @@
 
     <EditText
         android:id="@+id/lgn_pass"
-        android:layout_width="260dp"
+        android:layout_width="320dp"
         android:layout_height="50dp"
         android:fontFamily="@font/jost_medium"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="350dp"
         android:textColor="@color/primary_shade"
         android:hint="enter password"
+        android:textSize="20sp"
         android:inputType="textPassword"
         android:includeFontPadding="true"
         android:gravity="center"
@@ -58,7 +60,7 @@
         android:layout_height="50dp"
         android:text="@string/login"
         android:layout_marginTop="420dp"
-        android:layout_marginLeft="210dp"
+        android:layout_marginLeft="230dp"
         android:textColor="@color/primary"
         android:backgroundTint="@color/primary_shade"/>
 
@@ -68,7 +70,7 @@
         android:layout_height="wrap_content"
         android:text="SIGN-IN"
         android:layout_marginTop="480dp"
-        android:layout_marginLeft="260dp"
+        android:layout_marginLeft="265dp"
         android:fontFamily="@font/jost_medium"
         android:textStyle="italic"
         android:textColor="@color/primary_shade"/>
