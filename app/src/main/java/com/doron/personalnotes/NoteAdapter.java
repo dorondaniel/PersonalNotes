@@ -16,7 +16,7 @@ import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 public class NoteAdapter extends FirestoreRecyclerAdapter<Notes, NoteAdapter.NoteViewHolder> {
     Context context;
 
-    public NoteAdapter(@NonNull FirestoreRecyclerOptions<Notes> options, MainActivity context) {
+    public NoteAdapter(@NonNull FirestoreRecyclerOptions<Notes> options, Context context) {
         super(options);
         this.context = context;
     }

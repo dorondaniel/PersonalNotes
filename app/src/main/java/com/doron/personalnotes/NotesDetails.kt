@@ -12,9 +12,6 @@ import com.google.firebase.firestore.DocumentReference
 
 class NotesDetails : AppCompatActivity() {
     private lateinit var binding : ActivityNotesDetailsBinding
-
-    lateinit var titleEt:EditText
-    lateinit var contentEt:EditText
     lateinit var titletv: TextView
     lateinit var ettitle: String
     lateinit var etcontent: String
@@ -26,9 +23,6 @@ class NotesDetails : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityNotesDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        titleEt = binding.titleTxt
-        contentEt = binding.contentTxt
         titletv = binding.pgTitle
 
         delete_tv = binding.deleteTv
@@ -38,12 +32,12 @@ class NotesDetails : AppCompatActivity() {
         etcontent = intent.getStringExtra("content").toString()
         docId = intent.getStringExtra("docId").toString()
 
-        if(docId.isNotEmpty()){
+        if(docId.isEmpty()){
             isEdit = true
         }
 
-        titleEt.setText(ettitle)
-        contentEt.setText(etcontent)
+        binding.titleTxt.setText(ettitle)
+        binding.contentTxt.setText(etcontent)
 
         if(isEdit){
             titletv.setText("Edit Your Note")
@@ -73,15 +67,15 @@ class NotesDetails : AppCompatActivity() {
     }
 
     fun saveNotes() {
-        val title_notes = titleEt.text.toString()
-        val content_notes = contentEt.text.toString()
+        val title_notes = binding.titleTxt.text.toString()
+        val content_notes = binding.contentTxt.text.toString()
 
         if (title_notes.isEmpty()){
-            titleEt.setError("Title not set")
+            binding.titleTxt.setError("Title not set")
             return
         }
         if (content_notes.isEmpty()){
-            contentEt.setError("Content not Provided")
+            binding.contentTxt.setError("Content not Provided")
             return
         }
         val note = Notes()

@@ -52,8 +52,9 @@ class MainActivity : AppCompatActivity() {
                 FirestoreRecyclerOptions.Builder<Notes>().setQuery(query, Notes::class.java).build()
             val layoutManager = LinearLayoutManager(this)
             recycle.layoutManager = layoutManager
-            ntada = NoteAdapter(notes, MainActivity())
+            ntada = NoteAdapter(notes, this)
             recycle.adapter = ntada
+
         }
 
         fun onStart() {
